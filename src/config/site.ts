@@ -4,7 +4,9 @@ export const siteConfig = {
   description:
     "Ambitious and adaptable BTech (CSE) graduate skilled in Python, React, Next.js, AWS, and Terraform. Passionate about building modern, user-friendly cloud-native solutions.",
   url: "https://surakshit.dev",
+  avatarUrl: "https://avatars.githubusercontent.com/u/102235747?v=4",
   github: "https://github.com/surakshit-netizen",
+  githubUsername: "surakshit-netizen",
   linkedin:
     "https://www.linkedin.com/in/surakshit-chauhan?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   whatsapp: "https://wa.me/919027831645",
@@ -15,13 +17,14 @@ export const siteConfig = {
   heroSubtitle:
     "BTech CSE Graduate · Python & React Developer · AWS & DevOps Enthusiast",
 
-  about: `I'm an ambitious and adaptable developer with a BTech in Computer Science Engineering from DIT University, Dehradun. 
-I specialize in building responsive and interactive web applications, cloud infrastructure, and DevOps automation pipelines. 
-I love turning complex problems into elegant, scalable solutions — whether that's a 3D portfolio, an AI-powered resume screener, 
-or a Terraform-provisioned cloud environment on AWS.`,
+  about: `I'm an ambitious and adaptable developer with a BTech in Computer Science Engineering from DIT University, Dehradun. I specialize in building responsive and interactive web applications, cloud infrastructure, and DevOps automation pipelines.
+
+I love turning complex problems into elegant, scalable solutions — whether that's an AI-powered resume screener, a Terraform-provisioned cloud environment on AWS, or a sleek portfolio that loads in milliseconds.
+
+When I'm not coding, you'll find me exploring new cloud services, learning about container orchestration, or contributing to open-source projects.`,
 
   skills: {
-    "Programming & Web": ["Python", "React", "Next.js", "Node.js", "HTML", "CSS", "TypeScript"],
+    "Languages & Web": ["Python", "React", "Next.js", "Node.js", "HTML", "CSS", "TypeScript"],
     "Cloud & DevOps": ["AWS", "Terraform", "Docker", "Kubernetes", "Ansible", "Jenkins", "CI/CD"],
     "Tools & Platforms": ["Linux", "VMware", "GNS3", "VS Code", "Git / GitHub"],
   },
@@ -41,14 +44,12 @@ or a Terraform-provisioned cloud environment on AWS.`,
       issuer: "University of Colorado System via Coursera",
       description:
         "Comprehensive understanding of Network Planning, Data Integrity, Digital Communications, Routing Protocols, TCP/IP, and OSI Models.",
-      icon: "🌐",
     },
     {
       title: "AWS with DevOps",
       issuer: "DUCAT INDIA",
       description:
         "6–8 month intensive training covering Linux, Python/Bash scripting, AWS core services, Jenkins, Docker, Kubernetes, Ansible, and Terraform (IaC).",
-      icon: "☁️",
     },
   ],
 
@@ -60,7 +61,6 @@ or a Terraform-provisioned cloud environment on AWS.`,
       description:
         "A modern TypeScript web application that uses AI to screen and evaluate resumes against job descriptions, providing instant feedback and candidate rankings.",
       tags: ["TypeScript", "AI", "Web App"],
-      featured: true,
     },
     {
       name: "Terraform Cloud Deployment",
@@ -69,7 +69,6 @@ or a Terraform-provisioned cloud environment on AWS.`,
       description:
         "Automated AWS infrastructure provisioning using Terraform IaC — VPC, EC2, private RDS MySQL, Streamlit frontend, and a LangChain/LangGraph environment setup.",
       tags: ["Terraform", "AWS", "IaC", "DevOps"],
-      featured: true,
     },
   ],
 };

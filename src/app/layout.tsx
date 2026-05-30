@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  display: "swap",
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  display: "swap",
-});
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -22,16 +11,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "Surakshit Chauhan",
-    "Portfolio",
-    "Full Stack Developer",
-    "Cloud Developer",
-    "AWS",
-    "React",
-    "Next.js",
-    "Python",
-    "Terraform",
-    "DevOps",
+    "Surakshit Chauhan", "Portfolio", "Full Stack Developer",
+    "Cloud Developer", "AWS", "React", "Next.js", "Python", "Terraform", "DevOps",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {
@@ -42,23 +23,24 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.description,
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.title}`,
-    description: siteConfig.description,
-  },
   robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${jetbrainsMono.variable}`}>
-      <body className="bg-stone-950 text-stone-100 antialiased font-sans">
+    <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
