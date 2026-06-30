@@ -5,7 +5,7 @@
 <h1 align="center">Surakshit Chauhan — Portfolio</h1>
 
 <p align="center">
-  <strong>Cloud & Full-Stack Developer</strong><br/>
+  <strong>Cloud Engineer</strong><br/>
   <em>"Building the bridge between Cloud & Code"</em>
 </p>
 
@@ -133,35 +133,16 @@ All personal data is centralized in [`src/config/site.ts`](src/config/site.ts). 
 
 ---
 
-## 📋 Features
-
-- ✅ **Multi-page routing** — Next.js App Router with `/` and `/work`
-- ✅ **Live GitHub repos** — Fetches latest repositories via GitHub API
-- ✅ **Responsive** — Mobile-friendly layouts with CSS grid
-- ✅ **SEO optimized** — Meta tags, Open Graph, semantic HTML
-- ✅ **Animations** — Typewriter effect, orbiting icons, floating elements, hover micro-interactions
-- ✅ **Contact form** — mailto-powered, opens default email client
-- ✅ **Resume download** — PDF served from `/public`
-- ✅ **Glassmorphism** — Frosted glass cards with blur backdrop
-- ✅ **Dark theme** — Full dark mode with noise texture overlay
-
 ---
 
 ## 🚢 Deployment
 
-### Vercel (Recommended)
+### Vercel 
 
 1. Push to GitHub
 2. Import project at [vercel.com/new](https://vercel.com/new)
-3. Vercel auto-detects Next.js — click **Deploy**
+3. Vercel auto-detects Next.js
 4. (Optional) Add custom domain
-
-### Netlify
-
-```bash
-pnpm build
-# Deploy the `.next` output or use Netlify's Next.js plugin
-```
 
 ---
 
